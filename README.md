@@ -31,8 +31,7 @@ Those classes are organized as following packages:
 
 	Package util: including common constants and methods are used by other classes
 
-	Resources folder, including layout, menu, UI and some configurations for the app:
-IMApp/app/src/main/res/
+	Resources folder, including layout, menu, UI and some configurations for the app: IMApp/app/src/main/res/
 
 	Memorizing Trust Manager library: IMApp/MemorizingTrustManager
 
