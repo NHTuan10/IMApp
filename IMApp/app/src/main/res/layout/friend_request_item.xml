@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="12dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/avatar"
+        android:maxEms="12"
+        android:text="Contact1"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="20sp" />
+    <!--
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/button_container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/contact_name"
+            android:layout_toRightOf="@+id/avatar"
+            android:orientation="vertical"
+            android:padding="6dp">
+    -->
+    <Button
+        android:id="@+id/accept_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact_name"
+        android:layout_toRightOf="@+id/avatar"
+        style="?android:attr/buttonStyleSmall"
+        android:text="Accept" />
+
+    <Button
+        android:id="@+id/deny_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact_name"
+        android:layout_toRightOf="@+id/accept_button"
+        android:text="Deny" />
+
+
+</RelativeLayout>

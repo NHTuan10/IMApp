@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:paddingBottom="5dp"
+    android:orientation="vertical" >
+
+
+    <!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#91f1f1f1" />
+    -->
+    <LinearLayout
+        android:id="@+id/sendMsgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/message_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/type_message"
+            android:maxLines="3" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/send_message_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/send"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_list_view"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/sendMsgLayout" />
+
+</RelativeLayout>

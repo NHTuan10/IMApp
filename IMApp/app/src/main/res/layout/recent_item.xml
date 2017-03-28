@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    android:id="@+id/recent_item_layout">
+
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher"
+        android:paddingRight="12dp"
+        android:id="@+id/avatar" />
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:maxEms="12"
+        android:text="Contact1"
+        android:layout_toRightOf="@+id/avatar"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/latest_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:maxEms="20"
+        android:text="this is quick message"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_below="@id/contact_name"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp" />
+</RelativeLayout>
