@@ -36,3 +36,7 @@ Those classes are organized as following packages:
 	Memorizing Trust Manager (The MIT license Copyright (c) 2010 Georg Lukas <georg@op-co.de>) (https://github.com/ge0rg/MemorizingTrustManager): IMApp/MemorizingTrustManager
 
 	SQLCipher library © 2017, Zetetic, LLC (https://www.zetetic.net/about/): IMApp/app/src/main/jniLibs and IMApp/app/libs
+
+1.3 Configuration
+	To modify server address configuration, please modify the string resources "server_address" and "port" in file: app/src/main/res/values/strings.xml
+with your server address and port.
